@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "name": "word-dice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./index.js __TEST_WORD_DICE__"
+  },
+  "author": "lights",
+  "license": "MIT"
+}
