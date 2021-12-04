@@ -7859,7 +7859,7 @@ words['it-IT'] = [
     "aiuto",
     "aria",
     "aereo",
-    // TODO: find a one word translation for this "nello stesso modo",
+    "simile",
     "vivo",
     "Tutti",
     "permettere",
