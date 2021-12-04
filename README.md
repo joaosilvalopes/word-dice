@@ -32,4 +32,6 @@ const word = rollDice.roll({
 * pt-BR
 * pl-PL
 
+##
+
 Inspired by: https://www.npmjs.com/package/random-words
