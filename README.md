@@ -17,7 +17,7 @@ npm i 'word-dice';
 
 import wordDice from 'word-dice';
 
-const word = rollDice.roll({
+const word = wordDice.roll({
   minLength: 3,
   maxLength: 8,
   lang: 'en-US'
