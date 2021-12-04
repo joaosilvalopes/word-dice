@@ -9873,6 +9873,11 @@ const runTests = () => {
     testForLang('it-IT');
 };
 
-process?.argv[2] === '__TEST_WORD_DICE__' && runTests();
+if(process?.argv[2] === '__TEST_WORD_DICE__') {
+    const a = Date.now();
+    runTests();
+    const b = Date.now();
+    console.log(`Tests run in ${b - a} seconds`);
+}
 
 export default { roll, words };
