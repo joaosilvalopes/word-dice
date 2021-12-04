@@ -7854,7 +7854,7 @@ words['it-IT'] = [
     "contro",
     "età",
     "fa",
-    // TODO: find a one word translation for this "essere d'accordo",
+    "accordare",
     "avanti",
     "aiuto",
     "aria",
