@@ -8,5 +8,8 @@
     "test": "node ./index.js __TEST_WORD_DICE__"
   },
   "author": "lights",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/joaosilvalopes/word-dice"
+  }
 }
