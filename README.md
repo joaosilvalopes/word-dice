@@ -13,6 +13,8 @@ A lib to generate a random word in the given language iso language eg (en-US, pt
 ## Usage
 
 ```
+npm i 'word-dice';
+
 import wordDice from 'word-dice';
 
 const word = rollDice.roll({
@@ -22,3 +24,12 @@ const word = rollDice.roll({
 });
 
 ```
+## Supported languages
+
+* en-US
+* it-IT
+* pt-PT
+* pt-BR
+* pl-PL
+
+## Inspired by: https://www.npmjs.com/package/random-words
