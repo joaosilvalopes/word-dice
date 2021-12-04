@@ -7838,7 +7838,7 @@ words['it-IT'] = [
     "attivo",
     "attività",
     "effettivo",
-    // TODO: find a one word translation for this "in realtà",
+    "infatti",
     "Inserisci",
     "addizione",
     "aggiuntivo",
