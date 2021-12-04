@@ -3882,7 +3882,7 @@ words['pt-PT'] = [
     "preocupado",
     "preocupação",
     "pior",
-    // TODO: find a one word translation for this "que vale a pena",
+    "mérito",
     "seria",
     "envolto",
     "escrever",
