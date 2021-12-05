@@ -9880,4 +9880,4 @@ if(process?.argv[2] === '__TEST_WORD_DICE__') {
     console.log(`Tests run in ${b - a} seconds`);
 }
 
-export default { roll, words };
+module.exports = { roll, words };
