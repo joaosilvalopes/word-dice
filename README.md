@@ -35,3 +35,7 @@ const word = wordDice.roll({
 ##
 
 Inspired by: https://www.npmjs.com/package/random-words
+
+##
+
+Please note that the words used in the different languages are not to be understood as direct translations from the en-US language, we are trying to give the closest word possible from this language while maintaining the number of words
