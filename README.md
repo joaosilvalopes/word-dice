@@ -16,13 +16,14 @@ const word = wordDice.roll({
 });
 
 ```
+
 ## Supported languages
 
-* en-US
-* it-IT
-* pt-PT
-* pt-BR
-* pl-PL
+- en-US
+- it-IT
+- pt-PT
+- pt-BR
+- pl-PL
 
 ##
 
