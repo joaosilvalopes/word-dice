@@ -2,14 +2,6 @@
 
 A lib to generate a random word in the given language iso language eg (en-US, pt-PT)
 
-## Contributing
-
-* 1st - Check an english word in the `/data/en-US` data file that you know a good one word translation for in a `lang` eg: (`pt-PT`)
-* 2nd - Create a branch named `<lang>_<word>_<translation>` with one commit `<lang>_<word>_<translation>` eg: (`pt-PT_am_sou`)
-* 3nd - Change the word in the corresponding line in the `/data/<lang>`
-* 4rd - Change the word in the actual program `index.js` in `words[<lang>]`
-* 5th - If the above steps were followed correctly approval is expected, tyvm :)
-
 ## Usage
 
 ```
@@ -35,7 +27,3 @@ const word = wordDice.roll({
 ##
 
 Inspired by: https://www.npmjs.com/package/random-words
-
-##
-
-Please note that the words used in the different languages are not to be understood as direct translations from the en-US language, we are trying to give the closest word possible from this language while maintaining the number of words
