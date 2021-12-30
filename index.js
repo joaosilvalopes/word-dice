@@ -1,3 +1,13 @@
+// word arrays length can't be bigger than 65535 as we are using Uint16 and the webcrypto api for true randomness
+const getWebCrypto = () => {
+  if(typeof window !== 'undefined') {
+    return window.crypto;
+  } else {
+    return require('crypto').webcrypto;
+  }
+}
+
+const crypto = getWebCrypto();
 const words = {};
 
 words["en-US"] = [
@@ -9288,15 +9298,25 @@ for (const lang in words) {
   words[lang] = words[lang].sort((a, b) => a.length - b.length);
 }
 
+const random = (min, max) => {
+  let n = Infinity;
+  
+  while(n < min || n > max) {
+    n = crypto.getRandomValues(new Uint16Array(1))[0];
+  }
+
+  return n;
+}
+
 const rollRec = (options) => {
   const { lang, minLength, maxLength } = options;
   const randomElement = (array) =>
-    array[Math.floor(Math.random() * array.length)];
+    array[random(0, array.length - 1)];
   const result = randomElement(words[lang]);
 
-  const invalidLenght = result.length < minLength || result.length > maxLength;
+  const invalidLength = result.length < minLength || result.length > maxLength;
 
-  return invalidLenght ? rollRec(options) : result;
+  return invalidLength ? rollRec(options) : result;
 };
 
 const putDefaultOptionValues = (optionsParam) => {
