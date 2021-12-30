@@ -1,13 +1,5 @@
 // word arrays length can't be bigger than 65535 as we are using Uint16 and the webcrypto api for true randomness
-const getWebCrypto = () => {
-  if(typeof window !== 'undefined') {
-    return window.crypto;
-  } else {
-    return require('crypto').webcrypto;
-  }
-}
-
-const crypto = getWebCrypto();
+const crypto = require('crypto').webcrypto;
 const words = {};
 
 words["en-US"] = [
