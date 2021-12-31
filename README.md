@@ -1,6 +1,7 @@
 # Word dice
 
-A lib to generate a random word in the given language iso language eg (en-US, pt-PT)
+A nodejs lib to generate a random word (with true randomness) in the given language iso language eg (en-US, pt-PT)
+Works on nodejs version v15.x or latter
 
 ## Usage
 
